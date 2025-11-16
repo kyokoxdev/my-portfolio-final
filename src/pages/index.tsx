@@ -35,34 +35,16 @@ const aboutStats = [
 
 const projects = [
   {
-    title: "Unqueue",
-    description: "E-commerce platform for selling home products",
-    image: "/assets/unqueue.webm",
-    href: "https://unqueue.shop/",
-  },
-  {
-    title: "InfiniteVPS",
-    description: "High performance VPS hosting solution",
-    image: "/assets/infinitevps.webm",
-    href: "#",
-  },
-  {
-    title: "TranslateBot",
-    description: "Efficient Multilingual Translation Bot for Discord",
-    image: "/assets/translate_bot.webm",
-    href: "https://translatebot.app/",
-  },
-  {
-    title: "Wrona",
-    description: "Robotics-focused technology company",
-    image: "/assets/wrona.jpeg",
-    href: "https://www.wrona.com/",
+    title: "React development demo",
+    description: "A demo website showcasing my ReactJS skills.",
+    image: "/assets/demo.png",
+    href: "",
   },
   {
     title: "This website",
     description: "My personal portfolio",
-    image: "/assets/portfolio.webm",
-    href: "https://github.com/wendoj/portfolio",
+    image: "/assets/portfolio.png",
+    href: "https://github.com/kyokoxdev/my-portfolio-final",
   },
 ];
 
@@ -103,7 +85,7 @@ const educationHistory = [
   {
     institution: "Water Resources University",
     degree: "Bachelor of Science in Software Engineering",
-    duration: "2023 - 2027",
+    duration: "2023 - Present",
     description: "Focused on software architecture, system design, and web development. Engaged in various team projects, applying agile methodologies to deliver scalable applications.",
   },
   {
@@ -302,7 +284,7 @@ export default function Home() {
               startups, where I&apos;ve been a key element in the entire product
               development process; from brainstorming ideas and wireframing, through
               prototyping and testing, to the delivery of the final product, all while
-              efficiently collaborating with cross-functional teams. My portfolio showcases the projects I&apos;ve built during my studies and personal exploration, including web development, system design, and automation. I&apos;m always learning, experimenting, and expanding my skill set.
+              efficiently collaborating with cross-functional teams. I&apos;m always learning, experimenting, and expanding my skill set.
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
