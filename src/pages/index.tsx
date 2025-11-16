@@ -99,6 +99,27 @@ const services = [
   },
 ];
 
+const educationHistory = [
+  {
+    institution: "Water Resources University",
+    degree: "Bachelor of Science in Software Engineering",
+    duration: "2023 - 2027",
+    description: "Focused on software architecture, system design, and web development. Engaged in various team projects, applying agile methodologies to deliver scalable applications.",
+  },
+  {
+    institution: "Google Coursera",
+    degree: "Data Analytics Professional Certificate",
+    duration: "2022",
+    description: "Completed an intensive online program covering data analysis, visualization, and statistical techniques using tools like SQL, R, and Tableau.",
+  },
+  {
+    institution: "Scrimba",
+    degree: "The Frontend Developer Career Path",
+    duration: "2024",
+    description: "Completed an in-depth curriculum focused on frontend development, covering HTML, CSS, JavaScript, React, and modern web design principles.",
+  },
+];
+
 export default function Home() {
   const refScrollContainer = useRef(null);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -295,6 +316,32 @@ export default function Home() {
                   <span className="tracking-tight text-muted-foreground xl:text-lg">
                     {stat.label}
                   </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Education */}
+        <section id="education" data-scroll-section>
+          <div data-scroll data-scroll-speed=".4" className="my-32">
+            <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
+              🎓 Education
+            </span>
+            <h2 className="mt-3 text-4xl font-semibold tracking-tight tracking-tighter xl:text-6xl">
+              My academic journey.
+            </h2>
+            <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
+              A timeline of my formal education and certifications.
+            </p>
+
+            <div className="mt-14 flex flex-col space-y-12">
+              {educationHistory.map((edu) => (
+                <div key={edu.institution} className="flex flex-col border-l-2 border-primary/20 pl-6">
+                  <span className="text-sm tracking-tight text-muted-foreground">{edu.duration}</span>
+                  <h3 className="text-xl font-medium tracking-tight text-foreground">{edu.institution}</h3>
+                  <h4 className="text-lg tracking-tight text-muted-foreground">{edu.degree}</h4>
+                  <p className="mt-2 max-w-2xl tracking-tight text-secondary-foreground">{edu.description}</p>
                 </div>
               ))}
             </div>

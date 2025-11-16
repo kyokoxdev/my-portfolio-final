@@ -39,6 +39,7 @@ const variants = {
 const navLinks = [
   { href: "#home", text: "Home" },
   { href: "#about", text: "About" },
+  { href: "#education", text: "Education" },
   { href: "#projects", text: "Projects" },
   { href: "#services", text: "Services" },
   { href: "#contact", text: "Contact" },
