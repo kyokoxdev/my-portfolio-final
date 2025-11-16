@@ -13,19 +13,11 @@ const withPWA = WithPWA({
   sw: "service-worker.js",
 });
 
-const isProd = process.env.NODE_ENV === "production";
-
 /**
  * @type {import('next').NextConfig}
  */
 // @ts-ignore
 const config = withPWA({
-  output: "export",
-  assetPrefix: isProd ? "/developer-portfolio/" : "",
-  basePath: isProd ? "/developer-portfolio" : "",
-  images: {
-    unoptimized: true,
-  },
   reactStrictMode: true,
 
   /**
