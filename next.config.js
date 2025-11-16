@@ -13,13 +13,15 @@ const withPWA = WithPWA({
   sw: "service-worker.js",
 });
 
+const isProd = process.env.NODE_ENV === "production";
+
 /**
  * @type {import('next').NextConfig}
  */
 // @ts-ignore
 const config = withPWA({
   reactStrictMode: true,
-
+  output: "export",
   /**
    * If you are using `appDir` then you must comment the below `i18n` config out.
    *
@@ -28,6 +30,13 @@ const config = withPWA({
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
+  },
+  assetPrefix: isProd ? "/developer-portfolio/" : "",
+
+  // Set the base path for production.
+  basePath: isProd ? "/developer-portfolio" : "",
+  images: {
+    unoptimized: true,
   },
 });
 
