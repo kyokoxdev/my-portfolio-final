@@ -31,10 +31,10 @@ const config = withPWA({
     defaultLocale: "en",
   },
    */
-  assetPrefix: isProd ? "/developer-portfolio/" : "",
+  assetPrefix: isProd ? "/my-portfolio-final/" : "",
 
   // Set the base path for production.
-  basePath: isProd ? "/developer-portfolio" : "",
+  basePath: isProd ? "/my-portfolio-final" : "",
   images: {
     unoptimized: true,
   },
