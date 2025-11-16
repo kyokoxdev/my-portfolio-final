@@ -28,15 +28,15 @@ import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 
 const aboutStats = [
-  { label: "Years of experience", value: "3+" },
-  { label: "Technologies mastered", value: "5+" },
-  { label: "Companies worked with", value: "15+" },
+  { label: "Years of experience", value: "5+" },
+  { label: "Programming languages mastered", value: "5+" },
+  { label: "Projects collaborated", value: "10+" },
 ];
 
 const projects = [
   {
     title: "Unqueue",
-    description: "E-commerce platform for selling digital products",
+    description: "E-commerce platform for selling home products",
     image: "/assets/unqueue.webm",
     href: "https://unqueue.shop/",
   },
@@ -48,7 +48,7 @@ const projects = [
   },
   {
     title: "TranslateBot",
-    description: "Powerful Multilingual Translation Bot for Discord",
+    description: "Efficient Multilingual Translation Bot for Discord",
     image: "/assets/translate_bot.webm",
     href: "https://translatebot.app/",
   },
@@ -60,7 +60,7 @@ const projects = [
   },
   {
     title: "This website",
-    description: "My personal website",
+    description: "My personal portfolio",
     image: "/assets/portfolio.webm",
     href: "https://github.com/wendoj/portfolio",
   },
@@ -70,19 +70,19 @@ const services = [
   {
     service: "Frontend Development",
     description:
-      "Creating stellar user interfaces and web experiences using the latest technologies.",
+      "Creating beautiful UI and webpages using the state-of-the-art technologies.",
     icon: Code2,
   },
   {
-    service: "UX Design",
+    service: "UX-UI Design",
     description:
-      "Building intuitive, user-centric designs that drive engagement and conversion.",
+      "Building intuitive, user-friendly designs that drive engagement and excitement.",
     icon: Frame,
   },
   {
-    service: "SEO Optimization",
+    service: "Code Optimization",
     description:
-      "Enhancing your website's visibility in search engines for increased organic traffic.",
+      "Improving project efficiency and maintainability for better performance and scalability.",
     icon: SearchCheck,
   },
   {
@@ -190,9 +190,9 @@ export default function Home() {
               data-scroll-speed=".09"
               className="flex flex-row items-center space-x-1.5"
             >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
-              <span className={styles.pill}>typescript</span>
+              <span className={styles.pill}>lua</span>
+              <span className={styles.pill}>c++</span>
+              <span className={styles.pill}>javascript</span>
             </div>
             <div>
               <h1
@@ -206,7 +206,7 @@ export default function Home() {
                   <br />
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                  WendoJ.
+                  Khánh.
                 </span>
               </h1>
               <p
@@ -215,8 +215,8 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                An experienced full-stack website developer with a passion for
-                crafting unique digital experiences.
+                A software engineering student with a deep passion for
+                developing and delivering unique scalable, user-focused applications.
               </p>
             </div>
             <span
@@ -225,7 +225,7 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="mailto:wendoj@proton.me" passHref>
+              <Link href="mailto:kyokoxdev@gmail.com" passHref>
                 <Button>
                   Get in touch <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
@@ -269,19 +269,19 @@ export default function Home() {
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
             <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-              I&apos;m an experienced full-stack developer proficient in{" "}
+              I&apos;m a software engineering student proficient in{" "}
               <Link
-                href="https://create.t3.gg/"
+                href="https://www.lua.org/"
                 target="_blank"
                 className="underline"
               >
-                TypeScript, Tailwind, and Next.js
+                Lua, JavaScript, and C++
               </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
-              companies, where I&apos;ve been instrumental in the entire product
-              design process; from ideation and wireframing, through
-              prototyping, to the delivery of the final product, all while
-              efficiently collaborating with cross-functional teams.
+              since 2023. My programming experience spans from team projects to 
+              startups, where I&apos;ve been a key element in the entire product
+              development process; from brainstorming ideas and wireframing, through
+              prototyping and testing, to the delivery of the final product, all while
+              efficiently collaborating with cross-functional teams. My portfolio showcases the projects I&apos;ve built during my studies and personal exploration, including web development, system design, and automation. I&apos;m always learning, experimenting, and expanding my skill set.
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
@@ -323,7 +323,7 @@ export default function Home() {
               ✨ Projects
             </span>
             <h2 className="mt-3 text-4xl font-semibold tracking-tight tracking-tighter xl:text-6xl">
-              Streamlined digital experiences.
+              Streamlined web applications.
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
               I&apos;ve worked on a variety of projects, from small websites to
@@ -446,7 +446,7 @@ export default function Home() {
               I&apos;m currently available for freelance work and open to
               discussing new projects.
             </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
+            <Link href="mailto:kyokoxdev@gmail.com" passHref>
               <Button className="mt-6">Get in touch</Button>
             </Link>
           </div>

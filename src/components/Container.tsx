@@ -83,8 +83,8 @@ export default function Container(props: ContainerProps) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: "Wendo",
-    description: `Full-stack website developer and TypeScript enthusiast.`,
+    title: "Portfolio",
+    description: `Full-stack software developer and C++ enthusiast.`,
     image: "/assets/logo.webp",
     type: "website",
     ...customMeta,
@@ -164,7 +164,7 @@ export default function Container(props: ContainerProps) {
           </button>
         </div>
         <Link href="/">
-          <span className="text-lg font-semibold">wendo</span>
+          <span className="text-lg font-semibold">kyokoxdev</span>
         </Link>
 
         {/* Desktop menu */}
@@ -221,7 +221,7 @@ export default function Container(props: ContainerProps) {
                 {/* Footer */}
                 <div className="flex min-h-fit w-full flex-col space-y-8 px-[22px] py-10">
                   <span className="text-sm text-muted-foreground">
-                    © {new Date().getFullYear()} wendo. All rights reserved.
+                    © {new Date().getFullYear()} Yuki. All rights reserved.
                   </span>
                 </div>
               </div>
